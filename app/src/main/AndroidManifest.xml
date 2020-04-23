@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.salem4muk.videostatus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name="com.salem4muk.videostatus.Util.YouApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.salem4muk.videostatus.Activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.salem4muk.videostatus.Activity.SplashScreen" />
+        <activity
+            android:name="com.salem4muk.videostatus.Activity.MainActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.salem4muk.videostatus.Activity.AboutUs" />
+        <activity android:name="com.salem4muk.videostatus.Activity.PrivacyPolice" />
+        <activity android:name="com.salem4muk.videostatus.Activity.Login" />
+        <activity android:name="com.salem4muk.videostatus.Activity.Register" />
+        <activity android:name="com.salem4muk.videostatus.Activity.RewardPointClaim" />
+        <activity android:name="com.salem4muk.videostatus.Activity.Verification" />
+        <activity android:name="com.salem4muk.videostatus.Activity.ContactUs" />
+        <activity android:name="com.salem4muk.videostatus.Activity.Faq" />
+        <activity android:name="com.salem4muk.videostatus.Activity.EarnPoint" />
+        <activity android:name="com.salem4muk.videostatus.Activity.StatusDetail" />
+        <activity android:name="com.salem4muk.videostatus.Activity.StatusSaver" />
+        <activity android:name="com.salem4muk.videostatus.Activity.DownloadStatusDetail" />
+        <activity
+            android:name="com.salem4muk.videostatus.Activity.NotificationDetail"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salem4muk.videostatus.Activity.VideoPlayer"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salem4muk.videostatus.Activity.UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.salem4muk.videostatus.Activity.AllComment"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.salem4muk.videostatus.Activity.AVStatus" />
+        <activity android:name="com.salem4muk.videostatus.Activity.Suspend" />
+        <activity android:name="com.salem4muk.videostatus.Activity.AccountVerification" />
+        <activity android:name="com.salem4muk.videostatus.Activity.Spinner" />
+        <activity android:name="com.salem4muk.videostatus.Activity.TDView" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name="com.salem4muk.videostatus.Util.NotificationExtenderExample"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.salem4muk.videostatus.Util.UploadService"
+            android:exported="false" />
+        <service
+            android:name="com.salem4muk.videostatus.Util.DownloadService"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "448278257179",
+    "firebase_url": "https://status-video-9f75c.firebaseio.com",
+    "project_id": "status-video-9f75c",
+    "storage_bucket": "status-video-9f75c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448278257179:android:af743fb74b5bcbd751e2be",
+        "android_client_info": {
+          "package_name": "com.drama.aloon.stores.yousef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448278257179-mlf0g2ak0930bu5cpp03gn8pfu1npgqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTH47uGh9TN33Y8Emu1_EVZd_aecw1sGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448278257179-mlf0g2ak0930bu5cpp03gn8pfu1npgqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
